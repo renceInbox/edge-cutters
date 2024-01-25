@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from fastapi_keycloak import OIDCUser
 
-from app.keycloak import idp
+from app.config.keycloak import idp
 
 router = APIRouter()
 

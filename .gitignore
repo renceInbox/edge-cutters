@@ -28,7 +28,7 @@ var/
 *.egg
 .venv/
 venv/
-.env
+.envs/
 
 # Python debug
 pdb/

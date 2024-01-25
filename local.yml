@@ -1,0 +1,26 @@
+volumes:
+  local_postgres_data: {}
+  local_redis_data: {}
+
+services:
+  backend:
+    image: backend_api
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: /run.sh
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    env_file:
+      - .envs/.local
+
+  postgres:
+    image: postgres:14
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+    env_file:
+      - .envs/.local.postgres
+    ports:
+      - "5432:5432"
