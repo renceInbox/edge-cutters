@@ -1,0 +1,13 @@
+venv/
+.flake8
+.mypy_cache
+.envs
+
+.idea
+*.lock
+.DS_Store
+**/__pycache__/
+.envs/
+celery-beat-schedule
+celerybeat-schedule
+*.pid

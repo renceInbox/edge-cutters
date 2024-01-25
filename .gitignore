@@ -1,0 +1,60 @@
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Packages
+__pycache__
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+.env
+
+# Python debug
+pdb/
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery
+celerybeat-schedule*
+celerybeat.pid
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Intellij IDEA specifics
+.idea/
+.fleet/
+
+# Qt related
+*.log
+*.log.*
+*.swo
+*.swp
+.DS_Store
+.AppleDouble
+.LSOverride
++47

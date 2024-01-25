@@ -1,0 +1,25 @@
+from pydantic import BaseModel
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class KeycloakSettings(BaseModel):
+    server_url: str
+    client_id: str
+    client_secret: str
+    realm_name: str
+    admin_client_secret: str
+    callback_uri: str
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env", extra='ignore')
+
+    keycloak_server_url: str
+    keycloak_client_id: str
+    keycloak_client_secret: str
+    keycloak_realm_name: str
+    keycloak_admin_client_secret: str
+    keycloak_callback_uri: str
+
+
+settings = Settings()
