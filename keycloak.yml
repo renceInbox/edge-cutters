@@ -1,6 +1,8 @@
 volumes:
   postgres_data: {}
 
+name: local-keycloak
+
 services:
   postgres:
     image: postgres:12-bullseye

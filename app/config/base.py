@@ -12,7 +12,7 @@ class KeycloakSettings(BaseModel):
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".envs/.local", extra="ignore")
 
     keycloak_server_url: str
     keycloak_client_id: str

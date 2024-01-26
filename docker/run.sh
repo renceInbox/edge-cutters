@@ -4,8 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-export APP_MODULE=${APP_MODULE-run:app}
+export APP_MODULE=${APP_MODULE-app.main:app}
 export HOST=${HOST:-0.0.0.0}
-export PORT=${PORT:-8001}
+export PORT=${PORT:-8000}
 
-uvicorn  --bind $HOST:$PORT "$APP_MODULE"
+uvicorn --host $HOST --port $PORT "$APP_MODULE"

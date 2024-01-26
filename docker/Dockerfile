@@ -17,10 +17,10 @@ COPY ./requirements.txt /requirements.txt
 RUN --mount=type=cache,target=/root/.cache \
     pip install -r /requirements.txt --no-cache-dir
 
-COPY ./docker/backend/run.sh /run.sh
+COPY ./docker/run.sh /run.sh
 RUN chmod +x /run.sh
 
-COPY ./docker/backend/prestart.sh /prestart.sh
+COPY ./docker/prestart.sh /prestart.sh
 RUN chmod +x /prestart.sh
 
 COPY  --chown=app . /app
