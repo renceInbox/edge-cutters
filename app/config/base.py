@@ -1,14 +1,4 @@
-from pydantic import BaseModel
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-
-class KeycloakSettings(BaseModel):
-    server_url: str
-    client_id: str
-    client_secret: str
-    realm_name: str
-    admin_client_secret: str
-    callback_uri: str
 
 
 class Settings(BaseSettings):
