@@ -8,7 +8,7 @@ click==8.1.7
 deprecation==2.1.0
 distlib==0.3.8
 ecdsa==0.18.0
-fastapi==0.109.0
+fastapi==0.109.1
 fastapi_keycloak==1.0.10
 filelock==3.13.1
 h11==0.14.0
